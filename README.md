@@ -21,10 +21,3 @@ This is a simple, responsive web application that detects the **user's location,
 - JavaScript (Vanilla)
 - GitHub Pages (for deployment)
 
-
-> *(Optional: Take a screenshot of your site and upload it with the name `screenshot.png`)*
-
----
-
-## 📁 Folder Structure
-
