@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> City & Network Detector </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1> Location & Network</h1>
+        <div class="details"><span class="label">Location:</span> <span class="value" id="location">Detecting...</span>
+        </div>
+        <div class="details"><span class="label">Location Coordinates:</span> <span class="value" id="coords">-</span>
+        </div>
+        <div class="details"><span class="label">Network Type:</span> <span class="value"
+                id="network">Checking...</span>
+        </div>
+        <button onclick="detectLocation()">Refresh</button>
+    </div>
+
+    <div class="scroll-down-wrapper">
+  <svg class="scroll-arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+    <path d="M12 5v14M5 12l7 7 7-7" fill="none" stroke="#4c00ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</div>
+
+
+
+    <div id="thanksSection" class="hidden">
+        <h2>Thanks for trying this app!</h2>
+        <p>Built with 3 Web APIs</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

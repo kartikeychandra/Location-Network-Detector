@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #a18cd1, #fbc2eb);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 200vh; /* <-- makes the page tall so scroll works */
+  padding: 3rem 1rem;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.867);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: rgb(51, 51, 51);
+  margin-bottom: 1rem;
+}
+
+.details {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.label {
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+}
+
+.value {
+  color: rgb(76, 0, 255);
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+button {
+  background: rgb(76, 0, 255);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: rgb(55, 0, 179);
+}
+
+#thanksSection {
+  margin-top: 100vh; /* Pushes this section below the screen */
+  padding: 2rem;
+  background: #d4edda;
+  border-radius: 16px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: opacity 1s ease;
+}
+
+#thanksSection h2 {
+  margin-bottom: 1rem;
+  color: rgb(21, 87, 36);
+}
+
+#thanksSection p {
+  color: rgb(21, 87, 36);
+  font-weight: 500;
+}
+
+.hidden {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
+}
+
+.scroll-down-wrapper {
+  margin-top: 1.5rem;
+  cursor: pointer;
+  animation: bounce 1.5s infinite;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-arrow {
+  animation: glow 2s infinite;
+  stroke: #4c00ff;
+  width: 36px;
+  height: 36px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    stroke: #4c00ff;
+    filter: drop-shadow(0 0 5px #4c00ff);
+  }
+  50% {
+    stroke: #6c63ff;
+    filter: drop-shadow(0 0 10px #6c63ff);
+  }
+}
